@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equic="X-UA-Compatible" content ="IE=edge">
+    <meta name="viewport" content="wide=device-width, initial-scale=1">
+    <title>Code JS Tracker</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+  </head>
+  <body onload="fetchIssues() ">
+    <div class="container">
+    <h1> Code JS Tracker <small> by SheCodesJS </small></h1>
+    <p>Getting started with JavaScript has been an intersting journey. This program is a simple JS program that 
+      tracks your progress as a starter. You are free to include an issue you just came across or struggling with.
+    </p>
+<div class="jumbotron">
+<h3>JS Starter Project:</h3>
+<form id="IssueInputForm">
+  <div class="form-group">
+    <label for="issueDescInput">Describe your JS Interest</label>
+    <input type="text" class="form-control"
+    id="issueDescInput" placeholder="Describe your JavaScript interest....">
+  </div>
+  <div class="form-group">
+    <label for="issueDescInput">State your Level</label>
+    <select class="form-control" id="issueSeverityIssue">
+      <option value="Novince">Novince</option>
+      <option value="Beginner">Beginner</option>
+      <option value="Intermidiate">Intermediate</option>
+      <option value="Expert">Expert</option>
+      <option value="Idc">I Don't Care</option>
+      </select>
+  </div>
+  <div class="form-group">
+      <label for="issueDescInput">Add New Issue</label>
+      <input type="text" class="form-control"
+      id="issueDescInput" placeholder="Description the issue....">
+    </div>
+    <div class="form-group">
+      <label for="issueDescInput">Severity</label>
+      <select class="form-control" id="issueSeverityIssue">
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+        </select>
+    </div>
+  <div class="form-group">
+    <label for="issueDescInput">Assigned To</label>
+    <input type="text" class="form-control"
+    id="issueAssignedToInput" placeholder="Enter responsible...">
+  </div>
+  <button type="submit" class="btn btn-primary">Add</button>
+</form>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <div id="issueList"
+    ></div>
+  </div>
+</div>
+</div>
+  <div class="footer">
+    <p>&copy SheCodesJS Series</p>
+  </div>
+</div>
+
+
+    <script src="main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="http://chancejs.com/chance.min.js"></script>
+</body>
+</html>
